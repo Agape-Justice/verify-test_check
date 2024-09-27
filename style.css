@@ -1,0 +1,279 @@
+@import url(https://fonts.googleapis.com/css2?family=Golos+Text&display=swap);
+
+@font-face {
+    font-display: swap;
+    font-family: OCR-A;
+    font-style: normal;
+    font-weight: 700;
+    src: url(/static/media/OCR-A%20Regular.f8850ec2eec8bea3a6d2.ttf) format("truetype")
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    line-height: 1.5;
+    tab-size: 4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeef37e;
+}
+
+header {
+    background-color: rgb(55, 65, 81, 1);
+    display: flex;
+    padding: 1% 5% 0.7%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+header .pageName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-weight: 600;
+}
+
+header .logo img {
+    height: 64px;
+    width: 66px;
+}
+
+header .name {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+header .nameTwo {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+header .menu {
+    display: none;
+}
+
+header .menus {
+    margin: 0 5px;
+    padding: 3px 1px;
+}
+
+.repMenu {
+    display: none;
+}
+
+header .getBtn {
+    padding: 10px 16px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(59 130 246/var(--tw-bg-opacity));
+    border-radius: .25rem;
+}
+
+header .getBtn:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(29 78 216/var(--tw-bg-opacity));
+}
+
+.loader {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    border-top: 2px solid blue;
+    animation: rotate 1s linear infinite;
+    margin: 5px 10px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.mainBody {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    padding: 0 5%;
+}
+
+.guild {
+    margin: 0 auto;
+    max-width: 42rem;
+}
+
+.mainBodyText {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.infoTable {
+    background-color: #fff;
+    height: 340px;
+    border-radius: 5px;
+    text-align: left;
+    padding: 16px 25px;
+    max-width: 42rem;
+    margin: 0 auto;
+    height: auto;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.132);
+ 
+}
+
+
+table {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+}
+
+.tableHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .80rem;
+}
+
+h1 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+span {
+    padding: 5px .5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(34 197 94/var(--tw-bg-opacity));
+    color: white;
+    border-radius: 999px;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+th {
+    padding: .22rem 5rem .25rem .5rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1022px) {
+    header {
+        padding: 3px 15px;
+    }
+
+    header .name {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    header .nameTwo {
+        font-size: .875rem;
+        line-height: 1.2rem;
+    }
+
+    th {
+        padding: .22rem 3rem .25rem .5rem;
+        font-weight: 400;
+    }
+
+    td {
+        font-weight: 505;
+    }
+}
+
+
+@media screen and (max-width: 766px) {
+    .links {
+        display: none;
+    }
+
+    header .menu {
+        display: block;
+        cursor: pointer;
+        position: relative;
+    }
+
+
+    .repMenu {
+        display: block;
+        position: absolute;
+        background-color: white;
+        color: black;
+        padding: 8px 15px;
+        top: 1.5%;
+        right: 2%;
+        border-radius: 5px;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.317);
+    }
+    
+    .repMenu a {
+        display: block;
+        line-height: 2rem;
+        text-decoration: none;
+        color: black;
+        line-height: 2.3rem;
+        font-size: 14px;
+    }
+
+    .repMenu #line {
+        border-bottom: 1px solid rgb(197, 196, 196);
+    }
+
+    .repMenu .getBtn {
+        padding: 3px 20px;
+        --tw-bg-opacity: 1;
+        background-color: rgb(59 130 246/var(--tw-bg-opacity));
+        border-radius: .25rem;
+        color: white;
+        line-height: 1.6rem;
+        text-align: left;
+    }
+
+    header .menuBtn {
+        background: none;
+        color: white;
+        border: none;
+        outline: none;
+
+    }
+
+    header svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    tbody {
+        font-size: .75rem;
+        line-height: 1rem;
+    }
+}
+
+@media screen and (max-width: 640px){
+    
+    header .name {
+        font-size: 1.25rem;
+        line-height: 1.2rem;
+    }
+
+    th {
+        padding: .22rem 1rem .25rem .5rem;
+        font-weight: 500;
+    }
+}

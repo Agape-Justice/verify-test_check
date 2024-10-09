@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="./logo.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <link rel="apple-touch-icon" href="/logo192.png">
+    <title>NPF CMRIS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="pageName">
+            <a href="https://cmris.npf.gov.ng/">
+                <div class="logo"> <img src="images/logo.png" alt=""> </div>
+            </a>
+            <a href="https://cmris.npf.gov.ng/" class="backToOrigin">
+                <p class="name">Nigeria Police Force</p>
+                <p class="nameTwo">Central Motor Registry (CMR)</p>
+            </a>
+        </div>
+
+        <div class="menu">
+            <button class="menuBtn">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="w-6 h-6"
+                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z" />
+                </svg>
+            </button>
+        </div>
+   
+
+        <div class="links">
+            <a href="https://cmris.npf.gov.ng/" class="menus">Home</a>
+            <a href="https://cmris.npf.gov.ng/about" class="menus">About</a>
+            <a href="https://cmris.npf.gov.ng/contact" class="menus">Contact</a>
+            <a href="https://cmris.npf.gov.ng/faq" class="menus">FAQ</a>
+            <a href="https://cmris.npf.gov.ng/signup" class="getBtn">Get Started </a>
+        </div>
+    </header>
+        <!-------LOADER----->
+        <div class="loader">
+
+        </div>
+         <!----RESPONSIVE HIDDING PART-->
+         <div class="repMenu" style="display: none;">
+            <a href="https://cmris.npf.gov.ng/" class="menus" id="line">Home</a>
+            <a href="https://cmris.npf.gov.ng/about" class="menus">About</a>
+            <a href="https://cmris.npf.gov.ng/contact" class="menus">Contact</a>
+            <a href="https://cmris.npf.gov.ng/signup" class="getBtn">Get Started </a>
+        </div>
+
+    <section class="mainBody">
+        <div class="guild">
+            <p class="mainBodyText"> Certificate Validation</p>
+            <div class="infoTable">
+                <div class="tableHeader">
+                    <h1>Details - Motor Vehicle Information Request</h1>
+                    <span>Approved</span>
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Name of Owner:</th>
+                            <td>TESLIM IDOWU KUKU</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Licence Number:</th>
+                            <td>LSR745JN</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Make:</th>
+                            <td>Lexus</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Model:</th>
+                            <td>RX 350</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Type:</th>
+                            <td>SUV</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Colour:</th>
+                            <td>Black</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Certificate Number:</th>
+                            <td>CMR/01/25/23/00304601</td>
+                        </tr>
+                        <tr>
+                            <th>Issue Date:</th>
+                            <td>24-09-2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <script>
+        const menu = document.querySelector('.menu');
+        const repMenu = document.querySelector('.repMenu');
+        const mainBody = document.querySelector('.mainBody')
+        const loader = document.querySelector('.loader')
+
+        menu.addEventListener('click', (e) => {
+            repMenu.style.display = 'block';
+        })
+
+        mainBody.addEventListener('click', (e) => {
+            repMenu.style.display = ' none';
+        })
+
+
+        window.addEventListener('load', (e) => {
+            mainBody.style.display = 'none';
+            loader.style.display = 'block';
+            setTimeout(()=>{
+                mainBody.style.display = 'block';
+                loader.style.display = 'none';
+            },2000)
+        })
+    </script>
+
+</body>
+
+</html>
